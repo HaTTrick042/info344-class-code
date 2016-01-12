@@ -21,8 +21,8 @@ if (count($matches) == 1) {
     $zip = $matches[0]['zip'];
     //var_dump ($zip); helpful for testing
     $url = "http://api.openweathermap.org/data/2.5/weather?zip={$zip},us&units=imperial&appid={$appId}";
-    $json = file_get_contents($url);
-    $weatherData = json_decode($json); //equivilent to json parse in javascript
+    $json = file_get_contents ($url);
+    $weatherData = json_decode ($json); //equivilent to json parse in javascript
     //var_dump($weatherData);
 }
 
